@@ -1,0 +1,14 @@
+ChromeDriver= C:/Users/abita/Documents/driversweb/chromedriver.exe
+
+URL= http://automationpractice.com/index.php
+
+Pageheader = logo
+
+Signin= //a[@class='login']
+submit = //p[@class='submit']//span[1]
+Signout = //a[@class='logout']
+firstname= //*[@id="customer_firstname"]
+lastname = //*[@id="customer_lastname"]
+createaccount = //*[@id=\"SubmitCreate\"]/span
+
+cart= //*[@title='View my shopping cart']
