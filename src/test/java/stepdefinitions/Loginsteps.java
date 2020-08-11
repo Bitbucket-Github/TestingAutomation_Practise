@@ -2,6 +2,7 @@ package stepdefinitions;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 //import com.sun.org.apache.bcel.internal.generic.Select;
 
+import java.nio.charset.Charset;
 import java.util.Random;
 
 //import com.sun.org.apache.bcel.internal.generic.Select;
@@ -21,6 +23,7 @@ import io.cucumber.java.en.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.messages.IdGenerator.UUID;
 
 public class Loginsteps extends ConfigReader {
 
@@ -34,17 +37,11 @@ public class Loginsteps extends ConfigReader {
 		//Object user;
 		//String projectPath = System.getProperty(user.dir);
 		//loacation of project ie., cucmberjava 
-		//ConfigReader objectprop = new ConfigReader();
-
 
 		System.setProperty("webdriver.chrome.driver", pro.getProperty("ChromeDriver"));
-		
 		//System.setProperty("webdriver.chrome.driver", "C:/Users/abita/Documents/driversweb/chromedriver.exe");
-		
 		driver = new ChromeDriver();
-
 		driver.navigate().to("https://www.google.com/");
-		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -56,9 +53,6 @@ public class Loginsteps extends ConfigReader {
 		driver.findElement(By.name("q")).sendKeys("automationpractise");
 
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-		//driver.get("http://demowebshop.tricentis.com/");
-		//System.out.println(driver.getCurrentUrl());
-		// Write code here that turns the phrase above into concrete actions
 
 	}
 
@@ -95,10 +89,10 @@ public class Loginsteps extends ConfigReader {
 
 	}
 
-	@When("user the enters (.*) and (.*)$")
-	public void user_the_enters_Emailnewand_passwordnew(String Emailnew , String passwordnew) {
-		driver.findElement(By.id("email")).sendKeys(Emailnew);
-		driver.findElement(By.id("passwd")).sendKeys(passwordnew);
+	@When("user the enters Emailnew and pwd")
+	public void user_the_enters_Emailnewand_passwordnew() {
+		driver.findElement(By.id("email")).sendKeys(pro.getProperty("Emailnew"));
+		driver.findElement(By.id("passwd")).sendKeys(pro.getProperty("pwd"));
 
 	}
 
@@ -114,17 +108,20 @@ public class Loginsteps extends ConfigReader {
 		
 		
 		driver.findElement(By.id("email_create")).click();
-		Random randomGenerator = new Random();  
-		int randomInt = randomGenerator.nextInt(100);  
-		driver.findElement(By.id("email_create")).sendKeys("bibogd"+ randomInt +"@gmail.com");
+		    int length = 10;
+		    boolean useLetters = true;
+		    boolean useNumbers = true;
+		    String Randomemail = RandomStringUtils.random(length, useLetters, useNumbers);
 
+	 driver.findElement(By.id("email_create")).sendKeys(  Randomemail+"@gmail.com");
+	 System.out.println("Randomemail is    "  + Randomemail+"@gmail.com" );
 
 		driver.findElement(By.xpath(pro.getProperty("createaccount"))).click();
 
 		driver.findElement(By.id("id_gender1")).click();
 		driver.findElement(By.xpath(pro.getProperty("firstname"))).sendKeys("git");
 		driver.findElement(By.xpath(pro.getProperty("lastname"))).sendKeys("new");
-		driver.findElement(By.xpath("//*[@id=\"passwd\"]")).sendKeys("newgit123");
+		driver.findElement(By.xpath("//*[@id=\"passwd\"]")).sendKeys(pro.getProperty("pwd"));
 		driver.findElement(By.id("firstname")).sendKeys("git");   
 		driver.findElement(By.id("lastname")).sendKeys("new");
 		driver.findElement(By.id("address1")).sendKeys("new1,way colony");
@@ -143,8 +140,6 @@ public class Loginsteps extends ConfigReader {
 		driver.findElement(By.id("alias")).sendKeys("nonsense");
 		driver.findElement(By.xpath("//*[@id=\"submitAccount\"]/span")).click();
 		driver.findElement(By.xpath(pro.getProperty("Signout"))).click();
-
-
 	}
 
 
@@ -168,10 +163,12 @@ public class Loginsteps extends ConfigReader {
 
 	}
 
-	@When("user enters (.*) and (.*)$")
-	public void user_enters_Email_and_password(String Email , String password) {
-		driver.findElement(By.id("email")).sendKeys(Email);
-		driver.findElement(By.id("passwd")).sendKeys(password);
+	@When("user enters Email and password")
+	public void user_enters_Email_and_password() {
+		System.out.println("email is" +pro.getProperty("Email"));
+		
+		driver.findElement(By.id("email")).sendKeys(pro.getProperty("Email"));
+		driver.findElement(By.id("passwd")).sendKeys(pro.getProperty("pwd"));
 
 
 	}
@@ -184,6 +181,7 @@ public class Loginsteps extends ConfigReader {
 	@Then("check user is navigated to home page")
 	public void check_user_is_navigated_to_home_page() {
 		System.out.println("success");
+		
 	}
 
 

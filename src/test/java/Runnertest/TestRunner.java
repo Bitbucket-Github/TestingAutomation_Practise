@@ -1,5 +1,5 @@
 package Runnertest;
-import org.testng.annotations.DataProvider;
+//import org.testng.annotations.DataProvider;
 
 
 import org.junit.runner.RunWith;

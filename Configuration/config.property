@@ -5,6 +5,11 @@ URL= http://automationpractice.com/index.php
 Pageheader = logo
 
 Signin= //a[@class='login']
+Emailnew = bit76@gmail.com
+ 
+Email = bitbucket76@gmail.com
+pwd = Github123
+
 submit = //p[@class='submit']//span[1]
 Signout = //a[@class='logout']
 firstname= //*[@id="customer_firstname"]

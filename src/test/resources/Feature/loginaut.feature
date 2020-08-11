@@ -12,26 +12,22 @@ Feature: feature to test login functionality
     
     
 @Register
-  Scenario Outline: Check login functionality with invalid credentials
+  Scenario: Check login functionality with invalid credentials
     Given user navigate on sign in
     And user do the authentication process
-    When user the enters <Emailnew> and <passwordnew>
+    When user the enters Emailnew and pwd
     And clicks on the signin button
     Then error msg is displayed and user creates acoounr
 
-    Examples: 
-      | Emailnew        | passwordnew | status |
-      | bit76@gmail.com | Giub123     | fail   |
+ 
       
       
 @login
-  Scenario Outline: Check login functionality with valid credentials
+  Scenario: Check login functionality with valid credentials
     Given user clicks on sign in
     And user do the authentication
-    When user enters <Email> and <password>
+    When user enters Email and password
     And clicks on signin buttonp
     Then check user is navigated to home page
 
-    Examples: 
-      | Email                 | password  | status  |
-      | bitbucket76@gmail.com | Github123 | success |
+   
