@@ -14,7 +14,7 @@ public class MyStoreSearchStepDefinition {
 	WebDriver driver;
 	@Given("User opens the chromebrowser")
 	public void user_opens_the_chromebrowser() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Guest\\eclipse-workspace2\\MyStore\\drivers\\chromedriver.exe" );
+		System.setProperty("webdriver.chrome.driver","drivers\\chromedriver.exe" );
 		   driver =new ChromeDriver();
 		   //driver.manage().window().maximize();
 		   Thread.sleep(1000);

@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class) 
-@CucumberOptions(features="C:\\Users\\Guest\\eclipse-workspace2\\MyStore\\FeaturesFiles\\MyStoreOrderHistory.feature",
+@CucumberOptions(features="src\\test\\java\\Features\\MyStoreOrderHistory.feature",
 //tags= "@Searchbar" ,// @Navigation And @OrderHistory"},
 glue= {"stepdefinitionpackage"},
 monochrome=true ) 

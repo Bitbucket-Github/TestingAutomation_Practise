@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src\\test\\resources\\Feature\\Compare.feature",
+@CucumberOptions(features="src\\test\\java\\Features\\Compare.feature",
 							glue= "stepdefinitions",
 
 //tags= "@openbrowser,@Register,@login,@compare",

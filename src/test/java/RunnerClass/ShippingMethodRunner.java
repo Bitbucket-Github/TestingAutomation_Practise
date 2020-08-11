@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = "C:\\EclipseWorkspace\\CucumberProject\\src\\test\\java\\Features\\ShippingMethod.feature",
+@CucumberOptions(features = "src\\test\\java\\Features\\ShippingMethod.feature",
 glue= "StepDefinitions", 
 monochrome = true
 )

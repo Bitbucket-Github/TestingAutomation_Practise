@@ -15,7 +15,7 @@ public class MyStoreOrderHistoryStepDefinition {
 	WebDriver driver;
 	@Given("User opens browser")
 	public void user_opens_browser() throws InterruptedException {
-	 System.setProperty("webdriver.chrome.driver","C:\\Users\\Guest\\eclipse-workspace2\\MyStore\\drivers\\chromedriver.exe" );
+	 System.setProperty("webdriver.chrome.driver","C:\\Users\\semacha\\Desktop\\git_repo\\TestingAutomation_Practise\\drivers\\chromedriver.exe" );
 	   driver =new ChromeDriver();
 	   //driver.manage().window().maximize();
 	   Thread.sleep(1000);
