@@ -7,12 +7,11 @@ When User enters username, password and click on sign in button
 And select the items in the category list
 Then Add the items into the cart list
 
-@ShippingMethod
 Scenario: Verify and update the shipping method functionality 
 Given User already added product into the cart
-When User want to change the delivery address 
+When User is on delivery address page
 Then Accept the shipping mode and click on proceed to checkout button
 
-Scenario: Verify the user able to pay different payment options
-When User is on payment page 
-Then User click on any one of the payment method and click on confirm order
+#Scenario: Verify the user able to pay different payment options
+#When User is on payment page 
+#Then User click on any one of the payment method and click on confirm order

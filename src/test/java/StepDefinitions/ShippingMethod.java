@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.AssertJUnit;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -25,6 +26,11 @@ public class ShippingMethod {
 		driver = new ChromeDriver(); 
 		driver.navigate().to("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
+		
+		//validate that user able to navigate given website 
+		String expectedTitle = "My Store" ;
+		String actualTitle = driver.getTitle();
+		AssertJUnit.assertTrue("User not navigate to my store page..",expectedTitle.equals(actualTitle));
 	}
 
 	@When("User enters username, password and click on sign in button")
@@ -36,6 +42,11 @@ public class ShippingMethod {
 		driver.findElement(By.name("passwd")).sendKeys("Github123");
 		//click on sign in button
 		driver.findElement(By.xpath("//p[@class='submit']//span[1]")).click();
+		
+		//validate that user navigate to account page on clicking signing button
+		String expectedTitleInAccount = "My account - My Store";
+		String actualTitleInAccount = driver.getTitle();
+		AssertJUnit.assertTrue("After clicking signing button user unable to navigate my account page ",expectedTitleInAccount.equals(actualTitleInAccount));
 	}
 
 	@And("select the items in the category list")
@@ -65,70 +76,61 @@ public class ShippingMethod {
 		driver.findElement(By.xpath("//span[contains(text(),'Add to cart')]")).click();
 		System.out.println("user successfully added item into the cart...");
 	}
-	
+
 	//------------------------------------------------------------------------------------------------------------------------
-	
+
 	//Scenario 1 : Shipping Method
 
 	@Given("User already added product into the cart")
 	public void user_already_added_product_into_the_cart() {
 
-		//product already added into the cart, so click on the cart for further proceed
+		//product already added into the cart, so click on the cart to see the product details
 		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[3]/div[1]/a[1]")).click();
-		//click on proceed to checkout button in address method
+		//click on proceed to checkout button in the summary 
 		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/p[2]/a[1]/span[1]")).click();
+		
+		//validate that user able to navigate address step on clicking proceed to checkout button
+		String  actualSummaryStep ="03. Address";
+		WebElement summaryStep = driver.findElement(By.xpath("//li[@class='step_current third']//span[contains(text(),'Address')]"));
+		String expectedSummaryStep = summaryStep.getText();
+		AssertJUnit.assertEquals(expectedSummaryStep,actualSummaryStep);
 	}
 
-	@When("User want to change the delivery address")
-	public void user_want_to_change_the_delivery_address() {
+	@When("User is on delivery address page")
+	public void user_is_on_delivery_address_page() {
 
 		//user don't want to change the delivery address, so click on proceed to checkout button
-		driver.findElement(By.xpath("//button[@name='processAddress']//span[contains(text(),'Proceed to checkout')]")).click();	
+		driver.findElement(By.xpath("//button[@name='processAddress']//span[contains(text(),'Proceed to checkout')]")).click();
+		
+		//validate that user able to navigate shipping step on clicking proceed to checkout button
+		String  actualAddressStep ="04. Shipping";
+		WebElement AddressStep = driver.findElement(By.xpath("//li[@class='step_current four']//span[contains(text(),'Shipping')]"));
+		String expectedAddressStep = AddressStep.getText();
+		AssertJUnit.assertEquals(expectedAddressStep,actualAddressStep);
 	}
 
 	@Then("Accept the shipping mode and click on proceed to checkout button")
 	public void accept_the_shipping_mode_and_click_on_proceed_to_checkout_button() {
 
 		//to accept the condition for shipping mode
-		driver.findElement(By.id("uniform-cgv")).click();
+		WebElement ele=driver.findElement(By.id("uniform-cgv"));
+		ele.click();
+
 		//click on proceed to checkout for further process
 		driver.findElement(By.xpath("//button[@name='processCarrier']//span[contains(text(),'Proceed to checkout')]")).click();
 		System.out.println("User successfully accept the shipping method...");
-	}
 
-	//--------------------------------------------------------------------------------------------------------------------------
-	
-	//Scenario 2 : Payment Method
-	
-	@When("User is on payment page")
-	public void user_is_on_payment_page() {
-	    
-		System.out.println("user is on payment page and they can see 2 payment methods");
-	}
-
-	@Then("User click on any one of the payment method and click on confirm order")
-	public void user_click_on_any_one_of_the_payment_method_and_click_on_confirm_order() {
-	    
-		String paymentMethod= "PayByBank";
-		System.out.println("User paying " +paymentMethod+ " method");
-		 
-		if(paymentMethod.equals("PayByBank")) {
-			
-			//click on pay by bank 
-			driver.findElement(By.xpath("//a[@class='bankwire']")).click();
-			System.out.println("User can see the order summary history");
-			driver.findElement(By.xpath("//span[contains(text(),'I confirm my order')]")).click();
-			
-		}
-		else if(paymentMethod.equals("PayByCheck")) {
-			
-			//click on pay by check
-			driver.findElement(By.xpath("//a[@class='cheque']")).click();
-			System.out.println("User can see the order summary history");
-			driver.findElement(By.xpath("//span[contains(text(),'I confirm my order')]")).click();
-		}
+		//validate that user able to navigate payment step on clicking proceed to checkout button
+		String  actualShippingStep ="05. Payment";
+		WebElement ShippingStep = driver.findElement(By.xpath("//span[contains(text(),'Payment')]"));
+		String expectedShippingStep = ShippingStep.getText();
+		AssertJUnit.assertEquals(expectedShippingStep,actualShippingStep);
 		
-		System.out.println("ORDER CONFIRMED...");	
+	/*	//validating the terms of services for shipping mode
+		String actual_terms_services = "You must agree to the terms of service before continuing.";
+		WebElement varning =driver.findElement(By.xpath("//p[@class='fancybox-error']"));
+		String expected_terms_services = varning.getText();
+		System.out.println("Warning : " +expected_terms_services);
+		AssertJUnit.assertEquals(expected_terms_services,actual_terms_services);  */	
 	}
-
 }
