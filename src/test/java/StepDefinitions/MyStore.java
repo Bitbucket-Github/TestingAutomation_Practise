@@ -25,6 +25,7 @@ public class MyStore {
 			System.setProperty("webdriver.chrome.driver","drivers\\chromedriver.exe" );
 			driver =new ChromeDriver();
 			//driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(1000);
 		} catch (NullPointerException e) {
 			System.out.println("Please check whether you are not giving either key or value for browser");
@@ -150,6 +151,7 @@ public class MyStore {
 		String expectedPopup = text.getText();
 		System.out.println("The popup text is :"+expectedPopup);
 		AssertJUnit.assertEquals(expectedPopup,"You must be logged in to manage your wishlist.");
+		driver.quit();
 	}
 	//***********************************PAYMENT SCENARIO *****************************************
 	@Given("user click cart")

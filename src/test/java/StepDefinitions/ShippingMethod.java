@@ -25,6 +25,7 @@ public class ShippingMethod {
 		System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
 		driver = new ChromeDriver(); 
 		driver.navigate().to("http://automationpractice.com/index.php");
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 
 		//validate that user able to navigate given website 
@@ -86,12 +87,13 @@ public class ShippingMethod {
 
 	@Given("User already added product into the cart")
 	public void user_already_added_product_into_the_cart() {
-
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		//product already added into the cart, so click on the cart to see the product details
 		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[3]/div[1]/a[1]")).click();
 		//click on proceed to checkout button in the summary 
 		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/p[2]/a[1]/span[1]")).click();
-
+		//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a/span
+		//*[@id="center_column"]/p[2]/a[1]/span
 		//validate that user able to navigate address step on clicking proceed to checkout button
 		String  actualSummaryStep ="03. Address";
 		WebElement summaryStep = driver.findElement(By.xpath("//li[@class='step_current third']//span[contains(text(),'Address')]"));

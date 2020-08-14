@@ -212,6 +212,7 @@ public class LoginTest extends ConfigReader {
 		String actualTitleInAccount = driver.getTitle();
 		AssertJUnit.assertEquals(expectedTitleInAccount,actualTitleInAccount);
 		System.out.println("success");		
+		driver.quit();
 	}
 
 }

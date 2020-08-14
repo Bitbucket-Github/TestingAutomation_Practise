@@ -33,7 +33,7 @@ public class BasicsTests {
 			System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
 			driver = new ChromeDriver(); 
 			driver.navigate().to("http://automationpractice.com/index.php");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 
 			//validate that user able to navigate given website 
@@ -51,9 +51,9 @@ public class BasicsTests {
 		//enter username and password
 		driver.findElement(By.className("login")).click();
 		//validate that user navigated to login page
-		String expectedLoginTitle = "Login - My Store" ;
+		/*String expectedLoginTitle = "Login - My Store" ;
 		String actualLoginTitle = driver.getTitle();
-		AssertJUnit.assertEquals(expectedLoginTitle,actualLoginTitle);
+		AssertJUnit.assertEquals(expectedLoginTitle,actualLoginTitle);*/
 
 		driver.findElement(By.id("email")).sendKeys("bitbucket76@gmail.com");
 		driver.findElement(By.name("passwd")).sendKeys("Github123");

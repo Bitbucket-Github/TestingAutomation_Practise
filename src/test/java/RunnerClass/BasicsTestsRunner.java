@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @CucumberOptions(features = "src\\test\\java\\Features\\BasicsTests.feature",
-glue= "StepDefinitions", strict = true, plugin = {"pretty", "html:target/cucumber-reports/cucumber-report1","json:target/cucumber-reports/CucumberTestReport1.json"}
+glue= "StepDefinitions", tags = "@EndToEnd", strict = true, plugin = {"pretty", "html:target/cucumber-reports/cucumber-report1","json:target/cucumber-reports/CucumberTestReport1.json"}
 )
 
 public class BasicsTestsRunner {

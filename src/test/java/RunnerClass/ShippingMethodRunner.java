@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 //tags= {"@OpeningBrowser", "@SendToFriend"}
 
 
-@CucumberOptions(features = "src\\test\\java\\Features",
+@CucumberOptions(features = "src\\test\\java\\Features\\ShippingMethod.feature",
 glue= "StepDefinitions", strict = true, plugin = {"pretty", "html:target/cucumber-reports/cucumber-report4","json:target/cucumber-reports/CucumberTestReport4.json"}
 
 )
