@@ -1,4 +1,4 @@
-ChromeDriver= C:/EclipseWorkspace/CucumberProject/Lib/chromedriver.exe
+ChromeDriver= drivers/chromedriver.exe
 
 URL= http://automationpractice.com/index.php
 

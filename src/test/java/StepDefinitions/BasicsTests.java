@@ -30,9 +30,10 @@ public class BasicsTests {
 
 		try {
 			//navigate to website
-			System.setProperty("webdriver.chrome.driver", "C:\\EclipseWorkspace\\CucumberProject\\Lib\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
 			driver = new ChromeDriver(); 
 			driver.navigate().to("http://automationpractice.com/index.php");
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 
 			//validate that user able to navigate given website 

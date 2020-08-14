@@ -22,7 +22,7 @@ public class MyStore {
 	@Given("User opens the chromebrowser")
 	public void user_opens_the_chromebrowser() {
 		try {
-			System.setProperty("webdriver.chrome.driver","C:\\EclipseWorkspace\\CucumberProject\\Lib\\chromedriver.exe" );
+			System.setProperty("webdriver.chrome.driver","drivers\\chromedriver.exe" );
 			driver =new ChromeDriver();
 			//driver.manage().window().maximize();
 			Thread.sleep(1000);
@@ -252,6 +252,7 @@ public class MyStore {
 		String expectedConfirmOrder = ShippingStep.getText();
 		AssertJUnit.assertEquals(expectedConfirmOrder,actualConfirmOrder);
 		System.out.println("Order confirmed successfully...");
+		driver.quit();
 
 	}
 	//**************************************ORDERHISTORY***************************************

@@ -7,10 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features="C:\\EclipseWorkspace\\CucumberProject\\src\\test\\java\\Features\\MyStore.feature", strict = true,
-glue= {"StepDefinitions"}, 
-monochrome=true,
-tags = "@MyStorePayment"
+@CucumberOptions(features="src\\test\\java\\Features\\MyStore.feature", strict = true,
+glue= {"StepDefinitions"}, plugin = {"pretty", "html:target/cucumber-reports/cucumber-report3","json:target/cucumber-reports/CucumberTestReport3.json"},
+monochrome=true
 
 ) 
 

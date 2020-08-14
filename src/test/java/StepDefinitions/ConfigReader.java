@@ -14,7 +14,7 @@ public  class ConfigReader {
 		try {
 			//Object user;
 			//String projectPath = System.getProperty(user.dir);
-			File src= new File("C:\\EclipseWorkspace\\CucumberProject\\Configuration\\config.property");
+			File src= new File("Configuration\\config.property");
 			FileInputStream fi = new FileInputStream(src);
 
 			pro.load(fi);

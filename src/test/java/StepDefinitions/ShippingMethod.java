@@ -22,7 +22,7 @@ public class ShippingMethod {
 	public void user_is_on_website_page() {
 
 		//navigate to website
-		System.setProperty("webdriver.chrome.driver", "C:\\EclipseWorkspace\\CucumberProject\\Lib\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
 		driver = new ChromeDriver(); 
 		driver.navigate().to("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();

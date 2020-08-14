@@ -10,8 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:\\EclipseWorkspace\\CucumberProject\\src\\test\\java\\Features\\LoginTest.feature",  strict = true,
-glue= "StepDefinitions", monochrome= true
+@CucumberOptions(features="src\\test\\java\\Features\\LoginTest.feature",  strict = true,
+glue= "StepDefinitions", monochrome= true, plugin = {"pretty", "html:target/cucumber-reports/cucumber-report2","json:target/cucumber-reports/CucumberTestReport2.json"}
 
 //plugin={"pretty","html:target/HtmlReports", "json:target/JSONReports/report.json"}
 )
