@@ -6,6 +6,7 @@ Given User is on MyStore page
 
 @AddToCart
 Scenario: User should select the product and place into the cart 
+Given User is on MyStore page
 When User enters valid username and password 
 And Click on sign in button
 Then User navigate to home page
@@ -34,3 +35,5 @@ Scenario: Verify that user send his quaries through contact us option
 When User click on contact us button
 And user enters valid credentials for message send
 Then Click on the send button
+
+

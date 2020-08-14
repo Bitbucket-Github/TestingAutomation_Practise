@@ -26,7 +26,7 @@ public class ShippingMethod {
 		driver = new ChromeDriver(); 
 		driver.navigate().to("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
-		
+
 		//validate that user able to navigate given website 
 		String expectedTitle = "My Store" ;
 		String actualTitle = driver.getTitle();
@@ -42,11 +42,6 @@ public class ShippingMethod {
 		driver.findElement(By.name("passwd")).sendKeys("Github123");
 		//click on sign in button
 		driver.findElement(By.xpath("//p[@class='submit']//span[1]")).click();
-		
-		//validate that user navigate to account page on clicking signing button
-		String expectedTitleInAccount = "My account - My Store";
-		String actualTitleInAccount = driver.getTitle();
-		AssertJUnit.assertTrue("After clicking signing button user unable to navigate my account page ",expectedTitleInAccount.equals(actualTitleInAccount));
 	}
 
 	@And("select the items in the category list")
@@ -75,11 +70,19 @@ public class ShippingMethod {
 		//click on Add to cart
 		driver.findElement(By.xpath("//span[contains(text(),'Add to cart')]")).click();
 		System.out.println("user successfully added item into the cart...");
+
+		//validate the product added into the cart
+		//click on the cart button
+		driver.findElement(By.xpath("//b[contains(text(),'Cart')]")).click();
+		WebElement element=driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/small[2]"));
+		String str=element.getText();
+		AssertJUnit.assertEquals("Color : Black, Size : M", str);
+		System.out.println("Successfully product added into the cart");
 	}
 
 	//------------------------------------------------------------------------------------------------------------------------
 
-	//Scenario 1 : Shipping Method
+		//Scenario 1 : Shipping Method
 
 	@Given("User already added product into the cart")
 	public void user_already_added_product_into_the_cart() {
@@ -88,7 +91,7 @@ public class ShippingMethod {
 		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[3]/div[1]/a[1]")).click();
 		//click on proceed to checkout button in the summary 
 		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/p[2]/a[1]/span[1]")).click();
-		
+
 		//validate that user able to navigate address step on clicking proceed to checkout button
 		String  actualSummaryStep ="03. Address";
 		WebElement summaryStep = driver.findElement(By.xpath("//li[@class='step_current third']//span[contains(text(),'Address')]"));
@@ -101,7 +104,7 @@ public class ShippingMethod {
 
 		//user don't want to change the delivery address, so click on proceed to checkout button
 		driver.findElement(By.xpath("//button[@name='processAddress']//span[contains(text(),'Proceed to checkout')]")).click();
-		
+
 		//validate that user able to navigate shipping step on clicking proceed to checkout button
 		String  actualAddressStep ="04. Shipping";
 		WebElement AddressStep = driver.findElement(By.xpath("//li[@class='step_current four']//span[contains(text(),'Shipping')]"));
@@ -125,12 +128,13 @@ public class ShippingMethod {
 		WebElement ShippingStep = driver.findElement(By.xpath("//span[contains(text(),'Payment')]"));
 		String expectedShippingStep = ShippingStep.getText();
 		AssertJUnit.assertEquals(expectedShippingStep,actualShippingStep);
-		
+
 	/*	//validating the terms of services for shipping mode
 		String actual_terms_services = "You must agree to the terms of service before continuing.";
 		WebElement varning =driver.findElement(By.xpath("//p[@class='fancybox-error']"));
 		String expected_terms_services = varning.getText();
 		System.out.println("Warning : " +expected_terms_services);
-		AssertJUnit.assertEquals(expected_terms_services,actual_terms_services);  */	
+		AssertJUnit.assertEquals(expected_terms_services,actual_terms_services); */	
+		driver.quit();
 	}
 }

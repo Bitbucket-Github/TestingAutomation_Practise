@@ -7,6 +7,7 @@ When User enters username, password and click on sign in button
 And select the items in the category list
 Then Add the items into the cart list
 
+
 Scenario: Verify and update the shipping method functionality 
 Given User already added product into the cart
 When User is on delivery address page

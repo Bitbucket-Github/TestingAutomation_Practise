@@ -7,11 +7,13 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 //@CucumberOptions(features= {"classpath:OpeningBrowser.feature", "classpath:ShippingMethod.feature"})
+//tags= {"@OpeningBrowser", "@SendToFriend"}
+
 
 @CucumberOptions(features = "C:\\EclipseWorkspace\\CucumberProject\\src\\test\\java\\Features",
 glue= "StepDefinitions", strict = true,
-//tags= "@ShippingMethod"
-tags= {"@OpeningBrowser", "@SendToFriend"}
+tags= "@ShippingMethod"
+
 )
 
 public class ShippingMethodRunner {
