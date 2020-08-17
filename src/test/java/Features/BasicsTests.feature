@@ -6,7 +6,6 @@ Given User is on MyStore page
 
 @AddToCart
 Scenario: User should select the product and place into the cart 
-Given User is on MyStore page
 When User enters valid username and password 
 And Click on sign in button
 Then User navigate to home page

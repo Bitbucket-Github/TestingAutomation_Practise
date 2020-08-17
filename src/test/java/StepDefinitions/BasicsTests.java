@@ -133,6 +133,7 @@ public class BasicsTests {
 		String str=element.getText();
 		AssertJUnit.assertEquals("Color : Black, Size : M", str);
 		System.out.println("Successfully product added into the cart");
+		driver.quit();
 	}
 
 	//--------------------------------------------------------------------------------------------------------------
