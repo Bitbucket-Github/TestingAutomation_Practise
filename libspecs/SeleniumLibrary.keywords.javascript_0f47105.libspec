@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="SeleniumLibrary.keywords.javascript" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2020-08-20T07:27:02Z" specversion="2" source="C:\Users\Guest\Desktop\Python\Lib\site-packages\SeleniumLibrary\keywords\javascript.py" lineno="1">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``SeleniumLibrary.keywords.javascript``.</doc>
+<kw name="Namedtuple" source="C:\Users\Guest\Desktop\Python\lib\collections\__init__.py" lineno="313">
+<arguments>
+<arg>typename</arg>
+<arg>field_names</arg>
+<arg>*</arg>
+<arg>rename=False</arg>
+<arg>defaults=None</arg>
+<arg>module=None</arg>
+</arguments>
+<doc>Returns a new subclass of tuple with named fields.
+
+&gt;&gt;&gt; Point = namedtuple('Point', ['x', 'y'])
+&gt;&gt;&gt; Point.__doc__                   # docstring for the new class
+'Point(x, y)'
+&gt;&gt;&gt; p = Point(11, y=22)             # instantiate with positional args or keywords
+&gt;&gt;&gt; p[0] + p[1]                     # indexable like a plain tuple
+33
+&gt;&gt;&gt; x, y = p                        # unpack like a regular tuple
+&gt;&gt;&gt; x, y
+(11, 22)
+&gt;&gt;&gt; p.x + p.y                       # fields also accessible by name
+33
+&gt;&gt;&gt; d = p._asdict()                 # convert to a dictionary
+&gt;&gt;&gt; d['x']
+11
+&gt;&gt;&gt; Point(**d)                      # convert from a dictionary
+Point(x=11, y=22)
+&gt;&gt;&gt; p._replace(x=100)               # _replace() is like str.replace() but targets named fields
+Point(x=100, y=22)</doc>
+</kw>
+<kw name="Plural Or Not" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\misc.py" lineno="106">
+<arguments>
+<arg>item</arg>
+</arguments>
+<doc />
+</kw>
+<kw name="Seq 2 Str" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\misc.py" lineno="111">
+<arguments>
+<arg>sequence</arg>
+<arg>quote='</arg>
+<arg>sep=, </arg>
+<arg>lastsep= and </arg>
+</arguments>
+<doc>Returns sequence in format `'item 1', 'item 2' and 'item 3'`.</doc>
+</kw>
+</keywordspec>

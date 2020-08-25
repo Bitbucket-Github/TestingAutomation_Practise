@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.base" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.base.context" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.base.librarycomponent" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.errors" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.errors.CookieNotFound" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.errors.ElementNotFound" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.errors.NoOpenBrowser" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.errors.PluginError" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.errors.SeleniumLibraryException" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.errors.WindowNotFound" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.alert" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.browsermanagement" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.cookie" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.element" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.formelement" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.frames" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.javascript" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.runonfailure" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.screenshot" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.selectelement" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.tableelement" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.waiting" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.webdrivertools" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.webdrivertools.sl_file_detector" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.webdrivertools.sl_file_detector.SelLibLocalFileDetector" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.webdrivertools.webdrivertools.SeleniumOptions" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.webdrivertools.webdrivertools.WebDriverCache" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.keywords.window" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.locators" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.locators.customlocator" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.locators.elementfinder" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.locators.windowmanager" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils.events" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils.events.event" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils.events.event.Event" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils.events.scope_event" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils.librarylistener" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils.librarylistener.LibraryListener" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils.path_formatter" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils.path_formatter._SafeFormatter" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary.utils.types" path="C:/Users/Guest/Desktop/Python/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>

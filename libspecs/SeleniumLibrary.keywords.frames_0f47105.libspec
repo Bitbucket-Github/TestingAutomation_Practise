@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="SeleniumLibrary.keywords.frames" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2020-08-20T07:26:59Z" specversion="2" source="C:\Users\Guest\Desktop\Python\Lib\site-packages\SeleniumLibrary\keywords\frames.py" lineno="1">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``SeleniumLibrary.keywords.frames``.</doc>
+</keywordspec>

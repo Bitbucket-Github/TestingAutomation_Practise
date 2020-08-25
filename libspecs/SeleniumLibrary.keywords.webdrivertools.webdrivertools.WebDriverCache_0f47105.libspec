@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="SeleniumLibrary.keywords.webdrivertools.webdrivertools.WebDriverCache" type="LIBRARY" format="ROBOT" scope="TEST" namedargs="true" generated="2020-08-20T07:27:28Z" specversion="2" source="C:\Users\Guest\Desktop\Python\Lib\site-packages\SeleniumLibrary\keywords\webdrivertools\webdrivertools.py" lineno="327">
+<version />
+<scope>test case</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``SeleniumLibrary.keywords.webdrivertools.webdrivertools.WebDriverCache``.</doc>
+<kw name="Close" lineno="357">
+<arguments>
+</arguments>
+<doc />
+</kw>
+<kw name="Close All" lineno="369">
+<arguments>
+</arguments>
+<doc>Closes connections using given closer method and empties cache.
+
+If simply calling the closer method is not adequate for closing
+connections, clients should close connections themselves and use
+:meth:`empty_cache` afterwards.</doc>
+</kw>
+<kw name="Empty Cache" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\connectioncache.py" lineno="122">
+<arguments>
+</arguments>
+<doc>Empties the connection cache.
+
+Indexes of the new connections starts from 1 after this.</doc>
+</kw>
+<kw name="Get Connection" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\connectioncache.py" lineno="87">
+<arguments>
+<arg>alias_or_index=None</arg>
+</arguments>
+<doc>Get the connection specified by the given alias or index..
+
+If ``alias_or_index`` is ``None``, returns the current connection
+if it is active, or raises an error if it is not.
+
+Alias is whatever was given to :meth:`register` method and indices
+are returned by it. Index can be given either as an integer or
+as a string that can be converted to an integer. Raises an error
+if no connection with the given index or alias found.</doc>
+</kw>
+<kw name="Get Index" lineno="387">
+<arguments>
+<arg>alias_or_index</arg>
+</arguments>
+<doc />
+</kw>
+<kw name="Register" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\connectioncache.py" lineno="56">
+<arguments>
+<arg>connection</arg>
+<arg>alias=None</arg>
+</arguments>
+<doc>Registers given connection with optional alias and returns its index.
+
+Given connection is set to be the :attr:`current` connection.
+
+If alias is given, it must be a string. Aliases are case and space
+insensitive.
+
+The index of the first connection after initialization, and after
+:meth:`close_all` or :meth:`empty_cache`, is 1, second is 2, etc.</doc>
+</kw>
+<kw name="Resolve Alias Or Index" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\connectioncache.py" lineno="140">
+<arguments>
+<arg>alias_or_index</arg>
+</arguments>
+<doc />
+</kw>
+<kw name="Switch" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\connectioncache.py" lineno="74">
+<arguments>
+<arg>alias_or_index</arg>
+</arguments>
+<doc>Switches to the connection specified by the given alias or index.
+
+Updates :attr:`current` and also returns its new value.
+
+Alias is whatever was given to :meth:`register` method and indices
+are returned by it. Index can be given either as an integer or
+as a string that can be converted to an integer. Raises an error
+if no connection with the given index or alias found.</doc>
+</kw>
+</keywordspec>

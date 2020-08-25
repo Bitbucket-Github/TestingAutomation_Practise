@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="SeleniumLibrary.utils.path_formatter._SafeFormatter" type="LIBRARY" format="ROBOT" scope="TEST" namedargs="true" generated="2020-08-20T07:28:04Z" specversion="2" source="C:\Users\Guest\Desktop\Python\Lib\site-packages\SeleniumLibrary\utils\path_formatter.py" lineno="27">
+<version />
+<scope>test case</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``SeleniumLibrary.utils.path_formatter._SafeFormatter``.</doc>
+<kw name="Clear">
+<arguments>
+<arg>*args</arg>
+</arguments>
+<doc>D.clear() -&gt; None.  Remove all items from D.</doc>
+</kw>
+<kw name="Copy">
+<arguments>
+<arg>*args</arg>
+</arguments>
+<doc>D.copy() -&gt; a shallow copy of D</doc>
+</kw>
+<kw name="Fromkeys">
+<arguments>
+<arg>type</arg>
+<arg>iterable</arg>
+<arg>value=None</arg>
+</arguments>
+<doc>Create a new dictionary with keys from iterable and values set to value.</doc>
+</kw>
+<kw name="Get">
+<arguments>
+<arg>self</arg>
+<arg>key</arg>
+<arg>default=None</arg>
+</arguments>
+<doc>Return the value for key if key is in the dictionary, else default.</doc>
+</kw>
+<kw name="Items">
+<arguments>
+<arg>*args</arg>
+</arguments>
+<doc>D.items() -&gt; a set-like object providing a view on D's items</doc>
+</kw>
+<kw name="Keys">
+<arguments>
+<arg>*args</arg>
+</arguments>
+<doc>D.keys() -&gt; a set-like object providing a view on D's keys</doc>
+</kw>
+<kw name="Pop">
+<arguments>
+<arg>*args</arg>
+</arguments>
+<doc>D.pop(k[,d]) -&gt; v, remove specified key and return the corresponding value.
+If key is not found, d is returned if given, otherwise KeyError is raised</doc>
+</kw>
+<kw name="Popitem">
+<arguments>
+<arg>self</arg>
+</arguments>
+<doc>Remove and return a (key, value) pair as a 2-tuple.
+
+Pairs are returned in LIFO (last-in, first-out) order.
+Raises KeyError if the dict is empty.</doc>
+</kw>
+<kw name="Setdefault">
+<arguments>
+<arg>self</arg>
+<arg>key</arg>
+<arg>default=None</arg>
+</arguments>
+<doc>Insert key with a value of default if key is not in the dictionary.
+
+Return the value for key if key is in the dictionary, else default.</doc>
+</kw>
+<kw name="Update">
+<arguments>
+<arg>*args</arg>
+</arguments>
+<doc>D.update([E, ]**F) -&gt; None.  Update D from dict/iterable E and F.
+If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]
+If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v
+In either case, this is followed by: for k in F:  D[k] = F[k]</doc>
+</kw>
+<kw name="Values">
+<arguments>
+<arg>*args</arg>
+</arguments>
+<doc>D.values() -&gt; an object providing a view on D's values</doc>
+</kw>
+</keywordspec>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="SeleniumLibrary.keywords.window" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2020-08-20T07:27:33Z" specversion="2" source="C:\Users\Guest\Desktop\Python\Lib\site-packages\SeleniumLibrary\keywords\window.py" lineno="1">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``SeleniumLibrary.keywords.window``.</doc>
+<kw name="Is Falsy" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\robottypes.py" lineno="57">
+<arguments>
+<arg>item</arg>
+</arguments>
+<doc>Opposite of :func:`is_truthy`.</doc>
+</kw>
+<kw name="Is String" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\robottypes3.py" lineno="41">
+<arguments>
+<arg>item</arg>
+</arguments>
+<doc />
+</kw>
+<kw name="Is Truthy" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\robottypes.py" lineno="36">
+<arguments>
+<arg>item</arg>
+</arguments>
+<doc>Returns `True` or `False` depending is the item considered true or not.
+
+Validation rules:
+
+- If the value is a string, it is considered false if it is `'FALSE'`,
+  `'NO'`, `'OFF'`, `'0'`, `'NONE'` or `''`, case-insensitively.
+  Considering `'NONE'` false is new in RF 3.0.3 and considering `'OFF'`
+  and `'0'` false is new in RF 3.1.
+- Other strings are considered true.
+- Other values are handled by using the standard `bool()` function.
+
+Designed to be used also by external test libraries that want to handle
+Boolean values similarly as Robot Framework itself. See also
+:func:`is_falsy`.</doc>
+</kw>
+<kw name="Plural Or Not" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\misc.py" lineno="106">
+<arguments>
+<arg>item</arg>
+</arguments>
+<doc />
+</kw>
+<kw name="Timestr To Secs" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\robottime.py" lineno="41">
+<arguments>
+<arg>timestr</arg>
+<arg>round_to=3</arg>
+</arguments>
+<doc>Parses time like '1h 10s', '01:00:10' or '42' and returns seconds.</doc>
+</kw>
+</keywordspec>

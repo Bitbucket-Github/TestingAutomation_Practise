@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="SeleniumLibrary.keywords.alert" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2020-08-20T07:26:40Z" specversion="2" source="C:\Users\Guest\Desktop\Python\Lib\site-packages\SeleniumLibrary\keywords\alert.py" lineno="1">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``SeleniumLibrary.keywords.alert``.</doc>
+<kw name="Secs To Timestr" source="C:\Users\Guest\Desktop\Python\lib\site-packages\robot\utils\robottime.py" lineno="110">
+<arguments>
+<arg>secs</arg>
+<arg>compact=False</arg>
+</arguments>
+<doc>Converts time in seconds to a string representation.
+
+Returned string is in format like
+'1 day 2 hours 3 minutes 4 seconds 5 milliseconds' with following rules:
+
+- Time parts having zero value are not included (e.g. '3 minutes 4 seconds'
+  instead of '0 days 0 hours 3 minutes 4 seconds')
+- Hour part has a maximun of 23 and minutes and seconds both have 59
+  (e.g. '1 minute 40 seconds' instead of '100 seconds')
+
+If compact has value 'True', short suffixes are used.
+(e.g. 1d 2h 3min 4s 5ms)</doc>
+</kw>
+</keywordspec>

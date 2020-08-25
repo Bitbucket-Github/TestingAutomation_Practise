@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="SeleniumLibrary.keywords.webdrivertools.webdrivertools.SeleniumOptions" type="LIBRARY" format="ROBOT" scope="TEST" namedargs="true" generated="2020-08-20T07:27:24Z" specversion="2" source="C:\Users\Guest\Desktop\Python\Lib\site-packages\SeleniumLibrary\keywords\webdrivertools\webdrivertools.py" lineno="411">
+<version />
+<scope>test case</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``SeleniumLibrary.keywords.webdrivertools.webdrivertools.SeleniumOptions``.</doc>
+<kw name="Create" lineno="413">
+<arguments>
+<arg>browser</arg>
+<arg>options</arg>
+</arguments>
+<doc />
+</kw>
+</keywordspec>
